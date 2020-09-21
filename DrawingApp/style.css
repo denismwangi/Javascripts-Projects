@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: rgb(233, 228, 222);
+    min-height: 100vh;
+    justify-content: center;
+}
+
+canvas {
+    border: 1px solid #111111;
+    width: 500px;
+    height: 500px;
+}
+
+.toolbox {
+    background-color: blueviolet;
+    padding: 1rem;
+    width: 500px;
+}
+
+.toolbox>* {
+    font-size: 2rem;
+    padding: 0.25rem;
+    border: none;
+    width: 50px;
+    display: inline-block;
+    background-color: aliceblue;
+}
