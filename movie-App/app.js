@@ -15,7 +15,7 @@ async function getMovies(url) {
     const resp = await fetch(url);
     const respData = await resp.json();
 
-    // console.log(respData);
+     console.log(respData);
     showMovies(respData.results);
 
 
@@ -78,7 +78,7 @@ function showMovies(movies) {
         <h3>${title}</h3>
         <span class="${getClassByRate(vote_average)}">${vote_average}</span>
         </div>
-        <div class="overview>
+        <div class="overview">
         <h3>overview</h3>
         ${overview}
         </div>`
